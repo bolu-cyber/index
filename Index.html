@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+     body {
+            background-color: whitesmoke;
+        }
+        header {
+            box-shadow: 1;
+        }
+        .nav-link {
+            color: black;
+            font-size: 1.2rem;
+            margin: 0 10px;
+        }
+        .btn-primary {
+            background-color: blue;
+            border: none;
+            font-weight: bold;  
+            border-radius: 50px;  
+            border: 2px solid black;
+        }
+        .btn-primary:hover {
+            background-color: grey;
+            transition: 0.5s;
+        }
+        .btn-outline-secondary {
+            color: white;
+            background-color: blue;
+            border: 2px solid black;
+            font-weight: bold;
+            border-radius: 50px;
+        }
+        .btn-outline-secondary:hover {
+            background-color: grey;
+            border: none;
+            transition: 0.5s;
+        }
+        .container {
+            margin-bottom: 50px;
+        }
+        .col-10 {
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            box-shadow: 10px 10px 20px grey;
+            margin-left: 100px;
+        }
+        .d-block {
+            height: 220px;
+            width: 200px;
+            margin: 20px;
+            position: relative;
+            top: 25px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 3rem;
+        }
+        .feature {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px grey;
+            gap: 10px;
+            background-color: white;
+            
+        }
+        .feature:hover {
+            background-color: rgb(188, 188, 188);
+            color: white;
+            transition: 0.5s;
+        }
+        .icon-link {
+            text-decoration: none;
+            font-weight: bold;
+            color: blue;
+        }
+        .icon-link:hover {
+            color: red;
+            transition: 0.5s;
+        }
+        .position-relative {
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px grey;
+        }
+        
+        .text-body-emphasis {
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        .card {
+            border: 2px solid black;
+            box-shadow: 5px 5px 10px ; 
+        }
+        .my-container-one {
+            background-color: rgb(209, 208, 208);
+        }
+       h5 {
+        font-weight: bold;
+        
+       }
+       .nav-link {
+        font-size: 1rem;
+       }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+      </header>
+    </div>
+
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="lap.jpg"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="3000px"
+            height="1500px"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">OYIN WEB ORGANIZATION</h1>
+          <p class="lead">
+            I am a professional web developer specializing in clean, responsive,
+            and modern website design using HTML, CSS, and Bootstrap. I create
+            fast, user-friendly websites that are fully mobile-optimized and
+            tailored to deliver a seamless user experience. With a strong eye
+            for detail and best coding practices, I turn ideas into functional,
+            visually appealing digital solutions that help businesses stand out
+            online.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+              More Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 border-bottom">PORTFOLIO</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div
+             class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-taxi-front" viewBox="0 0 16 16">
+  <path d="M4.862 5.276 3.906 7.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17s2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 5H5.309a.5.5 0 0 0-.447.276M4 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0m10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-9 0a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1"/>
+  <path d="M6 1a1 1 0 0 0-1 1v1h-.181A2.5 2.5 0 0 0 2.52 4.515l-.792 1.848a.8.8 0 0 1-.38.404c-.5.25-.855.715-.965 1.262L.05 9.708a2.5 2.5 0 0 0-.049.49v.413c0 .814.39 1.543 1 1.997V14.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1.338c1.292.048 2.745.088 4 .088s2.708-.04 4-.088V14.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1.892c.61-.454 1-1.183 1-1.997v-.413q0-.248-.049-.49l-.335-1.68a1.8 1.8 0 0 0-.964-1.261.8.8 0 0 1-.381-.404l-.792-1.848A2.5 2.5 0 0 0 11.181 3H11V2a1 1 0 0 0-1-1zM4.819 4h6.362a1.5 1.5 0 0 1 1.379.91l.792 1.847a1.8 1.8 0 0 0 .853.904c.222.112.381.32.43.564l.336 1.679q.03.146.029.294v.413a1.48 1.48 0 0 1-1.408 1.484c-1.555.07-3.786.155-5.592.155s-4.037-.084-5.592-.155A1.48 1.48 0 0 1 1 10.611v-.413q0-.148.03-.294l.335-1.68a.8.8 0 0 1 .43-.563c.383-.19.685-.511.853-.904l.792-1.848A1.5 1.5 0 0 1 4.82 4Z"/>
+</svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">CAR WEBSITE</h3>
+          <p>
+            I developed a fully responsive booking website designed to make online reservations simple, fast, and user-friendly. Built with HTML, CSS, and Bootstrap, the platform features a clean and intuitive interface that allows users to easily browse services, select dates, and complete bookings with ease. The design includes a modern layout with clear call-to-actions, service details, and a secure booking form to enhance user trust. Optimized for both desktop and mobile, the website provides a seamless experience that improves customer engagement and helps businesses increase reservations.
+          </p>
+          <a href="#" class="icon-link">
+            See more
+            <svg class="bi" aria-hidden="true">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+  <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+</svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">HOTEL WEBSITE</h3>
+          <p>
+           I am a professional web developer with expertise in creating modern, responsive, and user-friendly websites. I specialize in platforms such as WordPress, Shopify, Webflow, Wix, Squarespace, Odoo, and Bubble.io, delivering tailored solutions for businesses of all sizes. My experience spans across eCommerce stores, landing pages, sales funnels, and web applications, with a strong focus on SEO, performance optimization, and seamless integrations. I am passionate about turning ideas into digital solutions that not only look great but also drive measurable results.
+          </p>
+          <a href="#" class="icon-link">
+            See More
+            <svg class="bi" aria-hidden="true">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </a>
+        </div>
+        .
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">BOOKING WEBSITE</h3>
+          <p>
+           I am a professional web developer specializing in clean, responsive, and modern website design using HTML, CSS, and Bootstrap. I create fast, user-friendly websites that are fully mobile-optimized and tailored to deliver a seamless user experience. With a strong eye for detail and best coding practices, I turn ideas into functional, visually appealing digital solutions that help businesses stand out online.
+          </p>
+          <a href="#" class="icon-link">
+           See More
+            <svg class="bi" aria-hidden="true">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Free</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">
+                $0<small class="text-body-secondary fw-light">/mo</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>CONSULTATION</li>
+                <li>INSTALLING PLUGINS</li>
+              </ul>
+              <button
+                type="button"
+                class="w-100 btn btn-lg btn-outline-primary"
+              >
+                Sign up for free
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Pro</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">
+                $200<small class="text-body-secondary fw-light">/mo</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li></li>
+                <li>1–3 page responsive car website</li>
+                <li>Clean and modern design</li>
+                <li>Showcase up to 5 cars</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">
+                Get started
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Enterprise</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">
+                $1000<small class="text-body-secondary fw-light">/mo</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>8–12 page advanced car website</li>
+                <li>Showcase unlimited cars with details</li>
+                <li>Booking or appointment form integration</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">
+                Contact us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div
+        class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5"
+      >
+        <svg class="bi mt-5 mb-3" width="48" height="48" aria-hidden="true">
+          <use xlink:href="#check2-circle"></use>
+        </svg>
+        <h1 class="text-body-emphasis">You don’t need to worry about the technical side I’ll handle everything and deliver a website that looks professional, works smoothly, and helps your business grow.</h1>
+        <p class="col-lg-6 mx-auto mb-4">
+          
+        </p>
+        <button class="btn btn-primary px-5 mb-5" type="button">
+          Call to action
+        </button>
+      </div>
+    </div>
+
+    <footer
+      class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+    >
+      <div class="col mb-3">
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+          aria-label="Bootstrap"
+        >
+          <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <p class="text-body-secondary">© 2025</p>
+      </div>
+      <div class="col mb-3"></div>
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
